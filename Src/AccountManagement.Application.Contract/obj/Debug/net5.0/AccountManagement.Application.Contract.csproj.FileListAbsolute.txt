@@ -1,0 +1,12 @@
+C:\Users\A\source\repos\BehinafzaCV\Src\AccountManagement.Application.Contract\bin\Debug\net5.0\AccountManagement.Application.Contract.deps.json
+C:\Users\A\source\repos\BehinafzaCV\Src\AccountManagement.Application.Contract\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\AccountManagement.Application.Contract\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+C:\Users\A\source\repos\BehinafzaCV\Src\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.csproj.AssemblyReference.cache
+C:\Users\A\source\repos\BehinafzaCV\Src\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A\source\repos\BehinafzaCV\Src\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.AssemblyInfoInputs.cache
+C:\Users\A\source\repos\BehinafzaCV\Src\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.AssemblyInfo.cs
+C:\Users\A\source\repos\BehinafzaCV\Src\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.csproj.CoreCompileInputs.cache
+C:\Users\A\source\repos\BehinafzaCV\Src\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\AccountManagement.Application.Contract\obj\Debug\net5.0\refint\AccountManagement.Application.Contract.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.pdb
+C:\Users\A\source\repos\BehinafzaCV\Src\AccountManagement.Application.Contract\obj\Debug\net5.0\ref\AccountManagement.Application.Contract.dll

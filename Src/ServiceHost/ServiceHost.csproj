@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\0_FrameWork\0_FrameWork.csproj" />
+    <ProjectReference Include="..\AccountManagement.Application\AccountManagement.Application.csproj" />
+    <ProjectReference Include="..\AccountManagement.Infrastrure.Bootstrapper\AccountManagement.Infrastrure.Bootstrapper.csproj" />
+  </ItemGroup>
+
+</Project>
