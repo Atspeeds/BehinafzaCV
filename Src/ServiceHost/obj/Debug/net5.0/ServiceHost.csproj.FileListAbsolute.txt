@@ -88,3 +88,7 @@ C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages
 C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Accounts\signup.cshtml.g.cs
 C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\_AccountLayout.cshtml.g.cs
 C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Resumes\Index.cshtml.g.cs
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\_Js.cshtml.g.cs
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\_Menue.cshtml.g.cs
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\_Style.cshtml.g.cs
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\_Header.cshtml.g.cs
