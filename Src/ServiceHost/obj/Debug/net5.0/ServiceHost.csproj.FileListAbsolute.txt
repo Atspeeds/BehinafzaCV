@@ -92,3 +92,14 @@ C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages
 C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\_Menue.cshtml.g.cs
 C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\_Style.cshtml.g.cs
 C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\_Header.cshtml.g.cs
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\bin\Debug\net5.0\PersonalInformationManagement.Application.Contract.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\bin\Debug\net5.0\PersonalInformationManagement.Application.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\bin\Debug\net5.0\PersonalInformationManagement.Domain.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\bin\Debug\net5.0\PersonalInformationManagement.Infrastrure.Bootstrapper.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\bin\Debug\net5.0\PersonalInformationManagement.Infrastrure.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\bin\Debug\net5.0\PersonalInformationManagement.Infrastrure.Bootstrapper.pdb
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\bin\Debug\net5.0\PersonalInformationManagement.Application.pdb
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\bin\Debug\net5.0\PersonalInformationManagement.Application.Contract.pdb
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\bin\Debug\net5.0\PersonalInformationManagement.Domain.pdb
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\bin\Debug\net5.0\PersonalInformationManagement.Infrastrure.pdb
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Resumes\Create.cshtml.g.cs

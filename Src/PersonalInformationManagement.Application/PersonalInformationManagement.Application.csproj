@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PersonalInformationManagement.ApplicationContract\PersonalInformationManagement.Application.Contract.csproj" />
+    <ProjectReference Include="..\PersonalInformationManagement.Domain\PersonalInformationManagement.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

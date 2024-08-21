@@ -2161,6 +2161,77 @@
         "runtime": {
           "bin/placeholder/AccountManagement.Infrastrure.Bootstrapper.dll": {}
         }
+      },
+      "PersonalInformationManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "PersonalInformationManagement.Application.Contract": "1.0.0",
+          "PersonalInformationManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PersonalInformationManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PersonalInformationManagement.Application.dll": {}
+        }
+      },
+      "PersonalInformationManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/PersonalInformationManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PersonalInformationManagement.Application.Contract.dll": {}
+        }
+      },
+      "PersonalInformationManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FrameWork": "1.0.0",
+          "PersonalInformationManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PersonalInformationManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PersonalInformationManagement.Domain.dll": {}
+        }
+      },
+      "PersonalInformationManagement.Infrastrure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FrameWork": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
+          "PersonalInformationManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PersonalInformationManagement.Infrastrure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PersonalInformationManagement.Infrastrure.dll": {}
+        }
+      },
+      "PersonalInformationManagement.Infrastrure.Bootstrapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "PersonalInformationManagement.Application": "1.0.0",
+          "PersonalInformationManagement.Application.Contract": "1.0.0",
+          "PersonalInformationManagement.Domain": "1.0.0",
+          "PersonalInformationManagement.Infrastrure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PersonalInformationManagement.Infrastrure.Bootstrapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PersonalInformationManagement.Infrastrure.Bootstrapper.dll": {}
+        }
       }
     }
   },
@@ -6546,6 +6617,31 @@
       "type": "project",
       "path": "../AccountManagement.Infrastrure.Bootstrapper/AccountManagement.Infrastrure.Bootstrapper.csproj",
       "msbuildProject": "../AccountManagement.Infrastrure.Bootstrapper/AccountManagement.Infrastrure.Bootstrapper.csproj"
+    },
+    "PersonalInformationManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../PersonalInformationManagement.Application/PersonalInformationManagement.Application.csproj",
+      "msbuildProject": "../PersonalInformationManagement.Application/PersonalInformationManagement.Application.csproj"
+    },
+    "PersonalInformationManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../PersonalInformationManagement.ApplicationContract/PersonalInformationManagement.Application.Contract.csproj",
+      "msbuildProject": "../PersonalInformationManagement.ApplicationContract/PersonalInformationManagement.Application.Contract.csproj"
+    },
+    "PersonalInformationManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../PersonalInformationManagement.Domain/PersonalInformationManagement.Domain.csproj",
+      "msbuildProject": "../PersonalInformationManagement.Domain/PersonalInformationManagement.Domain.csproj"
+    },
+    "PersonalInformationManagement.Infrastrure/1.0.0": {
+      "type": "project",
+      "path": "../PersonalInformationManagement.Infrastrure/PersonalInformationManagement.Infrastrure.csproj",
+      "msbuildProject": "../PersonalInformationManagement.Infrastrure/PersonalInformationManagement.Infrastrure.csproj"
+    },
+    "PersonalInformationManagement.Infrastrure.Bootstrapper/1.0.0": {
+      "type": "project",
+      "path": "../PersonalInformationManagement.Infrastrure.Bootstrapper/PersonalInformationManagement.Infrastrure.Bootstrapper.csproj",
+      "msbuildProject": "../PersonalInformationManagement.Infrastrure.Bootstrapper/PersonalInformationManagement.Infrastrure.Bootstrapper.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6553,7 +6649,8 @@
       "0_FrameWork >= 1.0.0",
       "AccountManagement.Application >= 1.0.0",
       "AccountManagement.Infrastrure.Bootstrapper >= 1.0.0",
-      "Microsoft.EntityFrameworkCore.Design >= 5.0.0"
+      "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
+      "PersonalInformationManagement.Infrastrure.Bootstrapper >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6591,6 +6688,9 @@
             },
             "C:\\Users\\A\\source\\repos\\BehinafzaCV\\Src\\AccountManagement.Infrastrure.Bootstrapper\\AccountManagement.Infrastrure.Bootstrapper.csproj": {
               "projectPath": "C:\\Users\\A\\source\\repos\\BehinafzaCV\\Src\\AccountManagement.Infrastrure.Bootstrapper\\AccountManagement.Infrastrure.Bootstrapper.csproj"
+            },
+            "C:\\Users\\A\\source\\repos\\BehinafzaCV\\Src\\PersonalInformationManagement.Infrastrure.Bootstrapper\\PersonalInformationManagement.Infrastrure.Bootstrapper.csproj": {
+              "projectPath": "C:\\Users\\A\\source\\repos\\BehinafzaCV\\Src\\PersonalInformationManagement.Infrastrure.Bootstrapper\\PersonalInformationManagement.Infrastrure.Bootstrapper.csproj"
             }
           }
         }

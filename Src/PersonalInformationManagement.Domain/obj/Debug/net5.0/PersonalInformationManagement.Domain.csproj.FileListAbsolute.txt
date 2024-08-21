@@ -1,0 +1,17 @@
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\obj\Debug\net5.0\PersonalInformationManagement.Domain.csproj.AssemblyReference.cache
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\obj\Debug\net5.0\PersonalInformationManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\obj\Debug\net5.0\PersonalInformationManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\obj\Debug\net5.0\PersonalInformationManagement.Domain.AssemblyInfo.cs
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\obj\Debug\net5.0\PersonalInformationManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\bin\Debug\net5.0\PersonalInformationManagement.Domain.deps.json
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\bin\Debug\net5.0\PersonalInformationManagement.Domain.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\bin\Debug\net5.0\PersonalInformationManagement.Domain.pdb
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\bin\Debug\net5.0\0_FrameWork.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\bin\Debug\net5.0\0_FrameWork.pdb
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\obj\Debug\net5.0\PersonalInformationManagement.Domain.csproj.CopyComplete
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\obj\Debug\net5.0\PersonalInformationManagement.Domain.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\obj\Debug\net5.0\refint\PersonalInformationManagement.Domain.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\obj\Debug\net5.0\PersonalInformationManagement.Domain.pdb
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\obj\Debug\net5.0\ref\PersonalInformationManagement.Domain.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\bin\Debug\net5.0\PersonalInformationManagement.Application.Contract.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.Domain\bin\Debug\net5.0\PersonalInformationManagement.Application.Contract.pdb

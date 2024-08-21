@@ -15,6 +15,7 @@
     <ProjectReference Include="..\0_FrameWork\0_FrameWork.csproj" />
     <ProjectReference Include="..\AccountManagement.Application\AccountManagement.Application.csproj" />
     <ProjectReference Include="..\AccountManagement.Infrastrure.Bootstrapper\AccountManagement.Infrastrure.Bootstrapper.csproj" />
+    <ProjectReference Include="..\PersonalInformationManagement.Infrastrure.Bootstrapper\PersonalInformationManagement.Infrastrure.Bootstrapper.csproj" />
   </ItemGroup>
 
 </Project>

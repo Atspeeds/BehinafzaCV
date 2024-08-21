@@ -37,6 +37,7 @@
           "AccountManagement.Application": "1.0.0",
           "AccountManagement.Infrastrure.Bootstrapper": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.0",
+          "PersonalInformationManagement.Infrastrure.Bootstrapper": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies.Reference": "5.0.0.0",
@@ -1435,6 +1436,67 @@
         },
         "compile": {
           "AccountManagement.Infrastrure.Bootstrapper.dll": {}
+        }
+      },
+      "PersonalInformationManagement.Application/1.0.0": {
+        "dependencies": {
+          "PersonalInformationManagement.Application.Contract": "1.0.0",
+          "PersonalInformationManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PersonalInformationManagement.Application.dll": {}
+        },
+        "compile": {
+          "PersonalInformationManagement.Application.dll": {}
+        }
+      },
+      "PersonalInformationManagement.Application.Contract/1.0.0": {
+        "runtime": {
+          "PersonalInformationManagement.Application.Contract.dll": {}
+        },
+        "compile": {
+          "PersonalInformationManagement.Application.Contract.dll": {}
+        }
+      },
+      "PersonalInformationManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_FrameWork": "1.0.0",
+          "PersonalInformationManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "PersonalInformationManagement.Domain.dll": {}
+        },
+        "compile": {
+          "PersonalInformationManagement.Domain.dll": {}
+        }
+      },
+      "PersonalInformationManagement.Infrastrure/1.0.0": {
+        "dependencies": {
+          "0_FrameWork": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
+          "PersonalInformationManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PersonalInformationManagement.Infrastrure.dll": {}
+        },
+        "compile": {
+          "PersonalInformationManagement.Infrastrure.dll": {}
+        }
+      },
+      "PersonalInformationManagement.Infrastrure.Bootstrapper/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "PersonalInformationManagement.Application": "1.0.0",
+          "PersonalInformationManagement.Application.Contract": "1.0.0",
+          "PersonalInformationManagement.Domain": "1.0.0",
+          "PersonalInformationManagement.Infrastrure": "1.0.0"
+        },
+        "runtime": {
+          "PersonalInformationManagement.Infrastrure.Bootstrapper.dll": {}
+        },
+        "compile": {
+          "PersonalInformationManagement.Infrastrure.Bootstrapper.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -3995,6 +4057,31 @@
       "sha512": ""
     },
     "AccountManagement.Infrastrure.Bootstrapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PersonalInformationManagement.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PersonalInformationManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PersonalInformationManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PersonalInformationManagement.Infrastrure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PersonalInformationManagement.Infrastrure.Bootstrapper/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -14,6 +14,8 @@ namespace AccountManagement.Infrastrure.UserInfra
             builder.Property(x => x.PasswordHash).IsRequired();
 
 
-        }
+		
+
+		}
     }
 }

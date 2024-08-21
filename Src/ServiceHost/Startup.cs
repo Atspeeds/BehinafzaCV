@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PersonalInformationManagement.Infrastrure.Bootstrapper;
 using System;
 
 namespace ServiceHost
@@ -28,7 +29,10 @@ namespace ServiceHost
             services.AddHttpClient();
 
             var dbContext = Configuration.GetConnectionString("DbContext");
-            AccountConfigBootstrapper.Configure(services, dbContext);
+
+			services.AddSingleton<IAuthHelper, AuthHelper>();
+			AccountConfigBootstrapper.Configure(services, dbContext);
+            PersonalInformationConfigBootstrapper.Configure(services, dbContext);
 
             #region Cookie
             services.AddHttpContextAccessor(); 
@@ -41,7 +45,7 @@ namespace ServiceHost
                     options.ExpireTimeSpan = TimeSpan.FromDays(30);
                 });
 
-            services.AddSingleton<IAuthHelper, AuthHelper>();
+         
             #endregion
 
         }

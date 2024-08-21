@@ -1,0 +1,12 @@
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.ApplicationContract\bin\Debug\net5.0\PersonalInformationManagement.Application.Contract.deps.json
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.ApplicationContract\bin\Debug\net5.0\PersonalInformationManagement.Application.Contract.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.ApplicationContract\bin\Debug\net5.0\PersonalInformationManagement.Application.Contract.pdb
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.ApplicationContract\obj\Debug\net5.0\PersonalInformationManagement.Application.Contract.csproj.AssemblyReference.cache
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.ApplicationContract\obj\Debug\net5.0\PersonalInformationManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.ApplicationContract\obj\Debug\net5.0\PersonalInformationManagement.Application.Contract.AssemblyInfoInputs.cache
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.ApplicationContract\obj\Debug\net5.0\PersonalInformationManagement.Application.Contract.AssemblyInfo.cs
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.ApplicationContract\obj\Debug\net5.0\PersonalInformationManagement.Application.Contract.csproj.CoreCompileInputs.cache
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.ApplicationContract\obj\Debug\net5.0\PersonalInformationManagement.Application.Contract.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.ApplicationContract\obj\Debug\net5.0\refint\PersonalInformationManagement.Application.Contract.dll
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.ApplicationContract\obj\Debug\net5.0\PersonalInformationManagement.Application.Contract.pdb
+C:\Users\A\source\repos\BehinafzaCV\Src\PersonalInformationManagement.ApplicationContract\obj\Debug\net5.0\ref\PersonalInformationManagement.Application.Contract.dll
