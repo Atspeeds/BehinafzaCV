@@ -9,7 +9,12 @@ namespace PersonalInformationManagement.Application
 	{
 		public Task<List<Resume_GetAll_Response>> GetAllByAsync(Resume_GetUserId_Request request)
 		{
-			return _repository.GetByAsync(request.UserId);
+			return _resumerepository.GetByAsync(request.UserId);
 		}
-	}
+
+        public Task<List<Skill_GetAll_Response>> GetAllAsync(long resumeId)
+        {
+			return _skillRepository.GetByResume(resumeId);
+        }
+    }
 }

@@ -24,10 +24,9 @@ namespace ServiceHost
         public void ConfigureServices(IServiceCollection services)
         {
           
+
             services.AddRazorPages();
             services.AddSession();
-            services.AddHttpClient();
-
             var dbContext = Configuration.GetConnectionString("DbContext");
 
 			services.AddSingleton<IAuthHelper, AuthHelper>();
@@ -40,8 +39,8 @@ namespace ServiceHost
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
-                    options.LoginPath = "/Account/Signing";
-                    options.LogoutPath = "/Account/Signing/Logout"; 
+                    options.LoginPath = "/Accounts/Signing";
+                    options.LogoutPath = "/Accounts/Signing/Logout"; 
                     options.ExpireTimeSpan = TimeSpan.FromDays(30);
                 });
 
@@ -71,9 +70,11 @@ namespace ServiceHost
 
             app.UseRouting();
 
-            app.UseAuthentication();
-            app.UseAuthorization(); 
 
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();

@@ -2,13 +2,14 @@
 using Microsoft.EntityFrameworkCore;
 using PersonalInformationManagement.Application.Contract.ResumeCon.ViewModel.Response;
 using PersonalInformationManagement.Domain.ResumeAgg;
+using PersonalInformationManagement.Domain.ResumeAgg.RepositoryService;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace PersonalInformationManagement.Infrastrure.ResumeInfra
 {
-	public class ResumeRepository : RepositoryBase<long, Resume>, IResumeRepository
+    public class ResumeRepository : RepositoryBase<long, Resume>, IResumeRepository
 	{
 		private readonly PersonalInformationContext _context;
 

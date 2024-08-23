@@ -11,5 +11,11 @@ namespace PersonalInformationManagement.Domain.ResumeAgg
 		public long ResumeId { get; private set; }
 		public virtual Resume Resume { get; private set; }
 
-	}
+        public Skill(string skillName, int score, long resumeId)
+        {
+            SkillName = skillName;
+            Score = score;
+            ResumeId = resumeId;
+        }
+    }
 }

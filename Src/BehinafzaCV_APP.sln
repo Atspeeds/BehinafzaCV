@@ -33,15 +33,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PIM.Infrastrure", "PIM.Infr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PIM.Application", "PIM.Application", "{91C02E2B-7D2D-4D31-9588-D9C4FC86011D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalInformationManagement.Domain", "PersonalInformationManagement.Domain\PersonalInformationManagement.Domain.csproj", "{0AD8EE0C-9EA2-4CE2-A432-3BBC34A96F0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalInformationManagement.Domain", "PersonalInformationManagement.Domain\PersonalInformationManagement.Domain.csproj", "{0AD8EE0C-9EA2-4CE2-A432-3BBC34A96F0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalInformationManagement.Application.Contract", "PersonalInformationManagement.ApplicationContract\PersonalInformationManagement.Application.Contract.csproj", "{E10B2202-263A-415F-9349-E44E600C7657}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalInformationManagement.Application.Contract", "PersonalInformationManagement.ApplicationContract\PersonalInformationManagement.Application.Contract.csproj", "{E10B2202-263A-415F-9349-E44E600C7657}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalInformationManagement.Application", "PersonalInformationManagement.Application\PersonalInformationManagement.Application.csproj", "{E66689DA-3C86-4D92-B4B1-3A7C9498A526}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalInformationManagement.Application", "PersonalInformationManagement.Application\PersonalInformationManagement.Application.csproj", "{E66689DA-3C86-4D92-B4B1-3A7C9498A526}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalInformationManagement.Infrastrure", "PersonalInformationManagement.Infrastrure\PersonalInformationManagement.Infrastrure.csproj", "{A137936E-D129-4AEB-B6FC-65D53AE8E7EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalInformationManagement.Infrastrure", "PersonalInformationManagement.Infrastrure\PersonalInformationManagement.Infrastrure.csproj", "{A137936E-D129-4AEB-B6FC-65D53AE8E7EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalInformationManagement.Infrastrure.Bootstrapper", "PersonalInformationManagement.Infrastrure.Bootstrapper\PersonalInformationManagement.Infrastrure.Bootstrapper.csproj", "{AE2EF771-0AA0-4A67-8B78-E4C94147E239}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalInformationManagement.Infrastrure.Bootstrapper", "PersonalInformationManagement.Infrastrure.Bootstrapper\PersonalInformationManagement.Infrastrure.Bootstrapper.csproj", "{AE2EF771-0AA0-4A67-8B78-E4C94147E239}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

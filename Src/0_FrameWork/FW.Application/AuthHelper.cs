@@ -72,15 +72,6 @@ namespace _0_FrameWork.FW.Application
 
         }
 
-        public List<int> GetCurrentPermission()
-        {
-            if (!IsAuthenticated()) return new List<int>();
-
-            var claimPermission = _contextAccessor.HttpContext.User.Claims.FirstOrDefault(x => x.Type == "Permissions")
-                ?.Value;
-
-            return JsonConvert.DeserializeObject<List<int>>(claimPermission);
-        }
 
         public string GetRoleCurrentUser()
         {
