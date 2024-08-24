@@ -10,6 +10,7 @@ using System;
 
 namespace ServiceHost.Pages.Resumes.Panel.Skill
 {
+    [ResumeRealUser]
     public class IndexModel : PageModel
     {
         private readonly ISkillApplication _application;
@@ -21,6 +22,7 @@ namespace ServiceHost.Pages.Resumes.Panel.Skill
 
         public List<Skill_GetAll_Response> Skills;
 
+        
         public void OnGet(long id)
         {
             HttpContext.Session.SetString("ResumeID", id.ToString());

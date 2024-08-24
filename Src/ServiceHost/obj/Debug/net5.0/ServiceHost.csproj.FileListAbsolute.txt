@@ -181,3 +181,4 @@ C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages
 C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Resumes\Resume\Create.cshtml.g.cs
 C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Resumes\Resume\Index.cshtml.g.cs
 C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Resumes\Panel\Experience\Index.cshtml.g.cs
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\NotFound.cshtml.g.cs
