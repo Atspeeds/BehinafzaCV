@@ -1,9 +1,7 @@
 ﻿using PersonalInformationManagement.Application.Contract.SkillCon;
 using PersonalInformationManagement.Domain.ResumeAgg.RepositoryService;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
-namespace PersonalInformationManagement.Application
+namespace PersonalInformationManagement.Application.SkillApp
 {
     public partial class SkillApplication: ISkillApplication
     {
@@ -14,6 +12,8 @@ namespace PersonalInformationManagement.Application
             _skillRepository = skillRepository;
         }
 
+    
 
+     
     }
 }

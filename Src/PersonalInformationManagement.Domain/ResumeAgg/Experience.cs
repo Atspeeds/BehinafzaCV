@@ -22,5 +22,15 @@ namespace PersonalInformationManagement.Domain.ResumeAgg
             EndDate = endDate;
             ResumeId = resumeId;
         }
+
+        public void Edit(string jobTitle, string company, DateTime startDate, DateTime endDate)
+        {
+            JobTitle = jobTitle;
+            Company = company;
+            StartDate = startDate;
+            EndDate = endDate;
+        }
+
+
     }
 }

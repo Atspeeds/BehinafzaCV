@@ -2,7 +2,7 @@
 using PersonalInformationManagement.Domain.ResumeAgg;
 using System.Threading.Tasks;
 
-namespace PersonalInformationManagement.Application
+namespace PersonalInformationManagement.Application.ResumeApp
 {
     public partial class ResumeApplication
     {

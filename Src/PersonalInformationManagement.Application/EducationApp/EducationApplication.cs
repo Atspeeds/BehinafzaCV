@@ -12,6 +12,6 @@ namespace PersonalInformationManagement.Application.EducationApp
             _educationRepository = educationRepository;
         }
 
-
+      
     }
 }

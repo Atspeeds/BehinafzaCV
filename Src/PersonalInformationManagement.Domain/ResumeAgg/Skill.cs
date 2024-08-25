@@ -17,5 +17,12 @@ namespace PersonalInformationManagement.Domain.ResumeAgg
             Score = score;
             ResumeId = resumeId;
         }
+        public void Edit(string skillName, int score)
+        {
+            SkillName = skillName;
+            Score = score;
+        }
+
+
     }
 }

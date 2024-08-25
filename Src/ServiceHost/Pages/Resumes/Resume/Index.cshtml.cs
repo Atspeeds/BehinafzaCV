@@ -39,6 +39,16 @@ namespace ServiceHost.Pages.Resumes.Resume
             return Partial("./Create");
         }
 
+        public IActionResult OnGetEdit(long resumeId)
+        {
+            var res = _application.GetDetailAsync(resumeId).Result;
+            return Partial("./Edit", res);
+        }
 
+        public async Task<JsonResult> OnPostEditAsync(Resume_Edit_Request request)
+        {
+            var res = await _application.EditAsync(request);
+            return new JsonResult(res);
+        }
     }
 }

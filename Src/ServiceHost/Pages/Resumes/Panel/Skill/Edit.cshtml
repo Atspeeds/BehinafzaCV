@@ -1,0 +1,46 @@
+﻿@model PersonalInformationManagement.Application.Contract.SkillCon.Skill_Edit_Request
+
+
+<div class="modal-header" style="direction:initial">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">ویرایش مهارت: @Model.SkillName</h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Edit"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh"
+      enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <label class="control-label">نام مهارت</label>
+                <input asp-for="SkillName" placeholder="نام مهارت خود را وارد کنید" type="text" class="form-control">
+
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <label class="control-label">میزان مهارت</label>
+                <select asp-for="Score" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected>انتخاب کنید...</option>
+                    <option value="1">آشنا</option>
+                    <option value="2">خوب</option>
+                    <option value="3">حرفه ای</option>
+                </select>
+            </div>
+        </div>
+
+    
+        <input type="hidden" asp-for="Id" value="@Model.Id" />
+    </div>
+    <div class="modal-footer">
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+            <button type="submit" class="btn btn-info waves-effect waves-light">ویرایش</button>
+        </div>
+    </div>
+</form>
+

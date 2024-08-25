@@ -1,8 +1,9 @@
 ﻿using _0_FrameWork.FW.Application;
 using PersonalInformationManagement.Application.Contract.ResumeCon;
 using PersonalInformationManagement.Domain.ResumeAgg.RepositoryService;
+using System.Threading.Tasks;
 
-namespace PersonalInformationManagement.Application
+namespace PersonalInformationManagement.Application.ResumeApp
 {
     public partial class ResumeApplication : IResumeApplication
     {
@@ -14,6 +15,7 @@ namespace PersonalInformationManagement.Application
             _authHelper = authHelper;
         }
 
+     
      
     }
 }

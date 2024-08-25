@@ -19,5 +19,9 @@ namespace PersonalInformationManagement.Domain.ResumeAgg
 			UserId = userId;
 		}
 
-	}
+        public void Edit(string summary)
+        {
+            Summary = summary;
+        }
+    }
 }

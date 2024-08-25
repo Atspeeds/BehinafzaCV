@@ -7,6 +7,7 @@ namespace PersonalInformationManagement.Application.Contract.ResumeCon
     {
         Task<bool> AddAsync(Resume_Add_Request request);
         Task<List<Resume_GetAll_Response>> GetAllByAsync(Resume_GetUserId_Request request);
-
+        Task<bool> EditAsync(Resume_Edit_Request request);
+        Task<Resume_Edit_Request> GetDetailAsync(long id);
     }
 }

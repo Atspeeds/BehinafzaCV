@@ -18,13 +18,27 @@ namespace PersonalInformationManagement.Infrastrure.ResumeInfra
             _context = context;
         }
 
+        public Task<Education_Edit_Request> GetDetailAsync(long id)
+        {
+            return _context.Educations
+                .Select(x => new Education_Edit_Request()
+                {
+                    Id = x.KeyId,
+                    Degree = x.Degree,
+                    Institution = x.Institution,
+                    StartDate = x.StartDate,
+                    EndDate = x.EndDate,
+                })
+                .FirstOrDefaultAsync(x => x.Id == id);
+        }
+
         public Task<List<Education_GetAll_Response>> SearchAsync(Education_Search_Request request)
         {
             var query = _context.Educations
                 .Where(x => x.ResumeId == request.ResumeId)
                 .Select(x => new Education_GetAll_Response()
                 {
-                    Id=x.KeyId,
+                    Id = x.KeyId,
                     Degree = x.Degree,
                     Institution = x.Institution,
                     StartDate = x.StartDate.GetDayPersian(),

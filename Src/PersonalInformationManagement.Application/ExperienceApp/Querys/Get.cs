@@ -11,5 +11,10 @@ namespace PersonalInformationManagement.Application.ExperienceApp
         {
             return _experiencerepository.SearchAsync(request);
         }
+
+        public Task<Experience_Edit_Request> GetDetailAsync(long id)
+        {
+            return _experiencerepository.GetDetailAsync(id);
+        }
     }
 }

@@ -23,5 +23,13 @@ namespace PersonalInformationManagement.Domain.ResumeAgg
             ResumeId = resumeId;
         }
 
+        public void Edit(string degree, string institution, DateTime startDate, DateTime endDate)
+        {
+            Degree = degree;
+            Institution = institution;
+            StartDate = startDate;
+            EndDate = endDate;
+        }
+
     }
 }

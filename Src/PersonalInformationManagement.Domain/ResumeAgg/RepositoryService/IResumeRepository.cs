@@ -8,5 +8,7 @@ namespace PersonalInformationManagement.Domain.ResumeAgg.RepositoryService
     public interface IResumeRepository : IRepositoryBase<long, Resume>
     {
         Task<List<Resume_GetAll_Response>> GetAllAsync(long userId);
+        Task<Resume_Edit_Request> GetDetailAsync(long id);
+
     }
 }

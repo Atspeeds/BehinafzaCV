@@ -1,6 +1,7 @@
 using _0_FrameWork.FW.Infrastrure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using PersonalInformationManagement.Application.Contract.EducationCon;
 using PersonalInformationManagement.Application.Contract.ExperienceCon;
 using PersonalInformationManagement.Application.Contract.ExperienceCon.ViewModel.Request;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace ServiceHost.Pages.Resumes.Panel.Experience
 
         private readonly IExperienceApplication _application;
         private readonly IResumeSession _resumeSession;
-        private long resumeId;
+        public long resumeId;
         public IndexModel(IExperienceApplication application, IResumeSession resumeSession)
         {
             _application = application;
@@ -41,5 +42,19 @@ namespace ServiceHost.Pages.Resumes.Panel.Experience
             var res = await _application.AddAsync(request);
             return new JsonResult(res);
         }
+
+        public IActionResult OnGetEdit(long experienceId)
+        {
+            var res = _application.GetDetailAsync(experienceId).Result;
+            return Partial("./Edit", res);
+        }
+
+        public async Task<JsonResult> OnPostEditAsync(Experience_Edit_Request request)
+        {
+            var res = await _application.EditAsync(request);
+            return new JsonResult(res);
+        }
+
+
     }
 }

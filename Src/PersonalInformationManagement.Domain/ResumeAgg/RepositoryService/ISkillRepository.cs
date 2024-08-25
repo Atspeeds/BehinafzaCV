@@ -8,5 +8,6 @@ namespace PersonalInformationManagement.Domain.ResumeAgg.RepositoryService
     public interface ISkillRepository:IRepositoryBase<long,Skill>
     {
         Task<List<Skill_GetAll_Response>> GetByResume(long resumeId);
+        Task<Skill_Edit_Request> GetDetailAsync(long id);
     }
 }

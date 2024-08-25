@@ -10,5 +10,10 @@ namespace PersonalInformationManagement.Application.EducationApp
         {
             return _educationRepository.SearchAsync(request);
         }
+        public Task<Education_Edit_Request> GetDetailAsync(long id)
+        {
+            return _educationRepository.GetDetailAsync(id);
+        }
+
     }
 }

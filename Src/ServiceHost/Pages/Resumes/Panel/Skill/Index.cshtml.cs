@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using PersonalInformationManagement.Application.Contract.SkillCon;
 using _0_FrameWork.FW.Infrastrure;
-using PersonalInformationManagement.Domain.ResumeAgg;
 
 namespace ServiceHost.Pages.Resumes.Panel.Skill
 {
@@ -13,7 +12,7 @@ namespace ServiceHost.Pages.Resumes.Panel.Skill
     {
         private readonly ISkillApplication _application;
         private readonly IResumeSession _resumeSession;
-        private long resumeId;
+        public long resumeId;
         public IndexModel(ISkillApplication application,IResumeSession resumeSession)
         {
             _application = application;
@@ -40,6 +39,16 @@ namespace ServiceHost.Pages.Resumes.Panel.Skill
             var res = await _application.AddAsync(request);
             return new JsonResult(res);
         }
+        public IActionResult OnGetEdit(long skillId)
+        {
+            var res = _application.GetDetailAsync(skillId).Result;
+            return Partial("./Edit", res);
+        }
 
+        public async Task<JsonResult> OnPostEditAsync(Skill_Edit_Request request)
+        {
+            var res = await _application.EditAsync(request);
+            return new JsonResult(res);
+        }
     }
 }

@@ -10,10 +10,6 @@ SinglePage.LoadModal = function () {
         null,
         function (htmlPage) {
             $("#ModalContent").html(htmlPage);
-            //const container = document.getElementById("ModalContent");
-            //const forms = container.getElementsByTagName("form");
-            //const newForm = forms[forms.length - 1];
-            //$.validator.unobtrusive.parse(newForm);
             showModal();
         }).fail(function (error) {
             alert("خطایی رخ داده، لطفا با مدیر سیستم تماس بگیرید.");
@@ -80,12 +76,13 @@ $(document).ready(function () {
 });
 
 function CallBackHandler(data, action, form) {
+    debugger;
     switch (action) {
         case "Message":
             alert(data.Message);
             break;
         case "Refresh":
-            if (data.isSuccedded) {
+            if (data === true) {
                 window.location.reload();
             } else {
                 alert(data.Message);
@@ -179,7 +176,7 @@ function handleAjaxCall(method, url, data) {
             function (data) {
 
             }).fail(function (error) {
-                alert("خطایی رخ داده است. لطفا با مدیر سیستم تماس بگیرید.");
+                alert("3خطایی رخ داده است. لطفا با مدیر سیستم تماس بگیرید.");
             });
     }
 }
@@ -195,16 +192,3 @@ jQuery.validator.addMethod("maxFileSize",
         }
     });
 jQuery.validator.unobtrusive.adapters.addBool("maxFileSize");
-
-//jQuery.validator.addMethod("maxFileSize",
-//    function (value, element, params) {
-//        var size = element.files[0].size;
-//        var maxSize = 3 * 1024 * 1024;
-//        debugger;
-//        if (size > maxSize)
-//            return false;
-//        else {
-//            return true;
-//        }
-//    });
-//jQuery.validator.unobtrusive.adapters.addBool("maxFileSize");

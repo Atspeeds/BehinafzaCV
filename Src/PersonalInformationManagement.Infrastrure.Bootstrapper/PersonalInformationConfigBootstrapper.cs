@@ -1,12 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using PersonalInformationManagement.Application;
 using PersonalInformationManagement.Application.Contract.EducationCon;
 using PersonalInformationManagement.Application.Contract.ExperienceCon;
 using PersonalInformationManagement.Application.Contract.ResumeCon;
 using PersonalInformationManagement.Application.Contract.SkillCon;
 using PersonalInformationManagement.Application.EducationApp;
 using PersonalInformationManagement.Application.ExperienceApp;
+using PersonalInformationManagement.Application.ResumeApp;
+using PersonalInformationManagement.Application.SkillApp;
 using PersonalInformationManagement.Domain.ResumeAgg.RepositoryService;
 using PersonalInformationManagement.Infrastrure.ResumeInfra;
 

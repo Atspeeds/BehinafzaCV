@@ -186,3 +186,7 @@ C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages
 C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Resumes\Panel\Experience\Create.cshtml.g.cs
 C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Resumes\Panel\Education\Create.cshtml.g.cs
 C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Resumes\Panel\Education\Index.cshtml.g.cs
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Resumes\Panel\Education\Edit.cshtml.g.cs
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Resumes\Panel\Experience\Edit.cshtml.g.cs
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Resumes\Panel\Skill\Edit.cshtml.g.cs
+C:\Users\A\source\repos\BehinafzaCV\Src\ServiceHost\obj\Debug\net5.0\Razor\Pages\Resumes\Resume\Edit.cshtml.g.cs

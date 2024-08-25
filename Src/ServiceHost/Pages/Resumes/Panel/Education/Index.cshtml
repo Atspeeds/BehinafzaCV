@@ -112,7 +112,7 @@
                                                 <td class="date">@item.EndDate</td>
 
                                                 <td>
-                                                    <a href="#showmodal=@Url.Page("./Index", "Edit",new { id = item.Id })" class="btn ripple btn-warning"> ویرایش کنید <i class="si si-note" data-toggle="tooltip"></i></a>
+                                                    <a href="#showmodal=@Url.Page("./Index", "Edit",new {id = Model.resumeId,educationId=item.Id})" class="btn ripple btn-warning"> ویرایش کنید <i class="si si-note" data-toggle="tooltip"></i></a>
                                                 </td>
 
                                             </tr>

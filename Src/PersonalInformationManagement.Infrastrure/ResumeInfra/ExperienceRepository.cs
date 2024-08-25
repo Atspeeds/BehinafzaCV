@@ -19,6 +19,20 @@ namespace PersonalInformationManagement.Infrastrure.ResumeInfra
             _context = dbContext;
         }
 
+        public Task<Experience_Edit_Request> GetDetailAsync(long id)
+        {
+            return _context.Experiences
+                .Select(x => new Experience_Edit_Request()
+                {
+                    Id = x.KeyId,
+                    JobTitle = x.JobTitle,
+                    Company = x.Company,
+                    StartDate = x.StartDate,
+                    EndDate = x.EndDate,
+                })
+                .FirstOrDefaultAsync(x => x.Id == id);
+        }
+
         public Task<List<Experience_GetAll_Request>> SearchAsync(Experience_Search_Request request)
         {
             var query = _context.Experiences

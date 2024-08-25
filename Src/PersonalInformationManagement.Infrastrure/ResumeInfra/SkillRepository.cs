@@ -23,9 +23,23 @@ namespace PersonalInformationManagement.Infrastrure.ResumeInfra
                 .Where(x => x.ResumeId == resumeId)
                 .Select(x => new Skill_GetAll_Response()
                 {
+                    Id = x.KeyId,
                     Score = x.Score,
                     SkillName = x.SkillName,
                 }).AsNoTracking().ToListAsync();
         }
+
+        public Task<Skill_Edit_Request> GetDetailAsync(long id)
+        {
+            return _context.Skills
+                .Select(x => new Skill_Edit_Request()
+                {
+                    Id = x.KeyId,
+                    SkillName = x.SkillName,
+                    Score = x.Score,
+                })
+                .FirstOrDefaultAsync(x => x.Id == id);
+        }
+
     }
 }

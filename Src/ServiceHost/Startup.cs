@@ -27,6 +27,7 @@ namespace ServiceHost
           
 
             services.AddRazorPages();
+            services.AddControllers();
             services.AddSession();
             var dbContext = Configuration.GetConnectionString("DbContext");
 
@@ -81,6 +82,7 @@ namespace ServiceHost
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
     }

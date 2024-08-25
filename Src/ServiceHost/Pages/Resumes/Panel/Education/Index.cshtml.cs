@@ -2,6 +2,7 @@ using _0_FrameWork.FW.Infrastrure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PersonalInformationManagement.Application.Contract.EducationCon;
+using PersonalInformationManagement.Domain.ResumeAgg;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -12,7 +13,7 @@ namespace ServiceHost.Pages.Resumes.Panel.Education
     {
         private readonly IEducationApplication _application;
         private readonly IResumeSession _resumeSession;
-        private long resumeId;
+        public long resumeId;
         public IndexModel(IEducationApplication application, IResumeSession resumeSession)
         {
             _application = application;
@@ -35,9 +36,21 @@ namespace ServiceHost.Pages.Resumes.Panel.Education
 
         public async Task<JsonResult> OnPostCreateAsync(Education_Add_Request request)
         {
-            request.ResumeId = resumeId;
             var res = await _application.AddAsync(request);
             return new JsonResult(res);
         }
+
+        public IActionResult OnGetEdit(long educationId)
+        {
+            var res = _application.GetDetailAsync(educationId).Result;
+            return Partial("./Edit",res);
+        }
+
+        public async Task<JsonResult> OnPostEditAsync(Education_Edit_Request request)
+        {
+            var res = await _application.EditAsync(request);
+            return new JsonResult(res);
+        }
+
     }
 }

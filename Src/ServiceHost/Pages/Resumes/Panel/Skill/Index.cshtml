@@ -45,22 +45,24 @@
                             {
                                 <label class="selectgroup-item ">
                                     <input type="checkbox" name="value" value="HTML" class="selectgroup-input" checked="">
-                                    <span class="selectgroup-button">@skill.SkillName
+                                    <span class="selectgroup-button">
+                                        @skill.SkillName
                                         @for (int i = 0; i < skill.Score; i++)
                                         {
-                                            <span style="color:darkgoldenrod" class="fa fa-star checked"></span>
+                                            <span style="color:gold" class="fa fa-star checked"></span>
                                         }
+                                        <a href="#showmodal=@Url.Page("./Index", "Edit",new {id = Model.resumeId,skillId=skill.Id})" class="btn ripple btn-warning btn-sm">ویرایش</a>
                                     </span>
-                                    
+
                                 </label>
 
-                           }
+                            }
 
 
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
