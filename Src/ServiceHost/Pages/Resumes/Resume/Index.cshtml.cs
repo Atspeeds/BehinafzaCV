@@ -3,8 +3,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PersonalInformationManagement.Application.Contract.ResumeCon;
-using PersonalInformationManagement.Application.Contract.ResumeCon.ViewModel.Request;
-using PersonalInformationManagement.Application.Contract.ResumeCon.ViewModel.Response;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

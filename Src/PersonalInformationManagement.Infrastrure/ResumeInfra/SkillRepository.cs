@@ -1,6 +1,6 @@
 ﻿using _0_FrameWork.FW.Infrastrure;
 using Microsoft.EntityFrameworkCore;
-using PersonalInformationManagement.Application.Contract.ResumeCon.ViewModel.Response;
+using PersonalInformationManagement.Application.Contract.SkillCon;
 using PersonalInformationManagement.Domain.ResumeAgg;
 using PersonalInformationManagement.Domain.ResumeAgg.RepositoryService;
 using System.Collections.Generic;

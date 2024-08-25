@@ -1,6 +1,6 @@
 ﻿using _0_FrameWork.FW.Infrastrure;
 using Microsoft.EntityFrameworkCore;
-using PersonalInformationManagement.Application.Contract.ResumeCon.ViewModel.Response;
+using PersonalInformationManagement.Application.Contract.ResumeCon;
 using PersonalInformationManagement.Domain.ResumeAgg;
 using PersonalInformationManagement.Domain.ResumeAgg.RepositoryService;
 using System.Collections.Generic;
@@ -18,7 +18,7 @@ namespace PersonalInformationManagement.Infrastrure.ResumeInfra
 			_context = dbContext;
 		}
 
-		public async Task<List<Resume_GetAll_Response>> GetByAsync(long userId)
+		public async Task<List<Resume_GetAll_Response>> GetAllAsync(long userId)
 		{
 			return await _context.Resumes.Select(x =>
 			new Resume_GetAll_Response

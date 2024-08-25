@@ -1,4 +1,4 @@
-﻿namespace PersonalInformationManagement.Application.Contract.ResumeCon.ViewModel.Response
+﻿namespace PersonalInformationManagement.Application.Contract.ResumeCon
 {
 	public class Resume_GetAll_Response
 	{

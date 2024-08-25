@@ -1,5 +1,5 @@
 ﻿using _0_FrameWork.FW.Domain;
-using PersonalInformationManagement.Application.Contract.ResumeCon.ViewModel.Response;
+using PersonalInformationManagement.Application.Contract.SkillCon;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

@@ -1,0 +1,84 @@
+﻿@model PersonalInformationManagement.Application.Contract.ExperienceCon.Experience_Add_Request
+
+
+
+<div class="modal-header" style="direction:initial">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">افزودن تجربه کاری جدید</h4>
+</div>
+
+<form asp-page="Index" asp-page-handler="Create"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh"
+      enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <label class="control-label">عنوان شغلی</label>
+                <input asp-for="JobTitle" placeholder="عنوان شغلی خود را وارد کنید" type="text" class="form-control">
+
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-12">
+                <label class="control-label">نام شرکت</label>
+                <input asp-for="Company" placeholder="نام شرکتی که مشغول به کار بودید را وارد کنید" type="text" class="form-control">
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="mg-b-20">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fe fe-calendar lh--9 op-6"></i>
+                            </div>
+                        </div>
+                        <input asp-for="StartDate" class="form-control fc-datepicker hasDatepicker" placeholder="تاریخ شروع کار" type="date" id="datepickerNoOfMonths">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="mg-b-20">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fe fe-calendar lh--9 op-6"></i>
+                            </div>
+                        </div>
+                        <input asp-for="EndDate" class="form-control hasDatepicker" id="datepickerNoOfMonths" placeholder="تاریخ پایان کار" type="date">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-info waves-effect waves-light">افزودن</button>
+    </div>
+</form>
+
+@section JsScript{
+    <script>
+        $('.fc-datepicker').datepicker({
+            showOtherMonths: true,
+            selectOtherMonths: true
+        });
+
+
+
+        // Datepicker no of months
+
+        $('#datepickerNoOfMonths').datepicker({
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            numberOfMonths: 2
+        });
+
+    </script>
+}

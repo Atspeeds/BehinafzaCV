@@ -1,4 +1,5 @@
 using _0_FrameWork.FW.Application;
+using _0_FrameWork.FW.Infrastrure;
 using AccountManagement.Infrastrure;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
@@ -30,6 +31,8 @@ namespace ServiceHost
             var dbContext = Configuration.GetConnectionString("DbContext");
 
 			services.AddSingleton<IAuthHelper, AuthHelper>();
+            services.AddScoped<IResumeSession, ResumeSession>();
+
 			AccountConfigBootstrapper.Configure(services, dbContext);
             PersonalInformationConfigBootstrapper.Configure(services, dbContext);
 

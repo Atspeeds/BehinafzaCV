@@ -1,4 +1,4 @@
-﻿namespace PersonalInformationManagement.Application.Contract.ResumeCon.ViewModel.Request
+﻿namespace PersonalInformationManagement.Application.Contract.ResumeCon
 {
     public class Resume_GetUserId_Request
     {

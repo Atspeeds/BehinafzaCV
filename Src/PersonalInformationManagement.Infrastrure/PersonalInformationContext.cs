@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PersonalInformationManagement.Domain.ResumeAgg;
-using PersonalInformationManagement.Infrastrure.ResumeInfra;
+using PersonalInformationManagement.Infrastrure.ResumeInfra.Mapping;
 
 namespace PersonalInformationManagement.Infrastrure
 {
-	public class PersonalInformationContext : DbContext
+    public class PersonalInformationContext : DbContext
 	{
 		public PersonalInformationContext(DbContextOptions<PersonalInformationContext> options) : base(options)
 		{

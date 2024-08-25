@@ -6,7 +6,7 @@ namespace ServiceHost
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public class ResumeRealUserAttribute : TypeFilterAttribute
     {
-        public ResumeRealUserAttribute() : base(typeof(ResumeRealUser))
+        public ResumeRealUserAttribute() : base(typeof(ResumeRealUserFilter))
         {
         }
     }

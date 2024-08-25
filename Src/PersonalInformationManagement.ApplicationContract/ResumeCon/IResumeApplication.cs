@@ -1,6 +1,4 @@
-﻿using PersonalInformationManagement.Application.Contract.ResumeCon.ViewModel.Request;
-using PersonalInformationManagement.Application.Contract.ResumeCon.ViewModel.Response;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace PersonalInformationManagement.Application.Contract.ResumeCon

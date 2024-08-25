@@ -13,5 +13,15 @@ namespace PersonalInformationManagement.Domain.ResumeAgg
 		//Relation
 		public long ResumeId { get; private set; }
 		public virtual Resume Resume { get; private set; }
-	}
+
+        public Education(string degree, string institution, DateTime startDate, DateTime endDate, long resumeId)
+        {
+            Degree = degree;
+            Institution = institution;
+            StartDate = startDate;
+            EndDate = endDate;
+            ResumeId = resumeId;
+        }
+
+    }
 }

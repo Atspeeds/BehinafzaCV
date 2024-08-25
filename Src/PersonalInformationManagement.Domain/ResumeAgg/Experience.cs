@@ -13,5 +13,14 @@ namespace PersonalInformationManagement.Domain.ResumeAgg
 		//Relation
 		public long ResumeId { get; private set; }
 		public virtual Resume Resume { get; private set; }
-	}
+
+        public Experience(string jobTitle, string company, DateTime startDate, DateTime endDate, long resumeId)
+        {
+            JobTitle = jobTitle;
+            Company = company;
+            StartDate = startDate;
+            EndDate = endDate;
+            ResumeId = resumeId;
+        }
+    }
 }
