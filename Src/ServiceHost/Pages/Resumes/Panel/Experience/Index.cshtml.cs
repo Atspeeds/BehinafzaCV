@@ -1,4 +1,5 @@
 using _0_FrameWork.FW.Infrastrure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PersonalInformationManagement.Application.Contract.EducationCon;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ServiceHost.Pages.Resumes.Panel.Experience
 {
+    [Authorize]
     [ResumeRealUser]
     public class IndexModel : PageModel
     {

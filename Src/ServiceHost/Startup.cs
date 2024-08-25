@@ -44,7 +44,7 @@ namespace ServiceHost
                 .AddCookie(options =>
                 {
                     options.LoginPath = "/Accounts/Signing";
-                    options.LogoutPath = "/Accounts/Signing/Logout"; 
+                    options.LogoutPath = "/Accounts/signup"; 
                     options.ExpireTimeSpan = TimeSpan.FromDays(30);
                 });
 

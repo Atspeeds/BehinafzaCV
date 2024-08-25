@@ -73,14 +73,6 @@ namespace _0_FrameWork.FW.Application
         }
 
 
-        public string GetRoleCurrentUser()
-        {
-            if (!IsAuthenticated()) return null;
-
-            return _contextAccessor.HttpContext.User
-                 .Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role)?.Value;
-        }
-
         public long GetUserId()
         {
             if (!IsAuthenticated()) return 0;

@@ -1,6 +1,7 @@
 ﻿using _0_FrameWork.FW.Infrastrure;
 using Microsoft.EntityFrameworkCore;
 using PersonalInformationManagement.Application.Contract.EducationCon;
+using PersonalInformationManagement.Application.Contract.SkillCon;
 using PersonalInformationManagement.Domain.ResumeAgg;
 using PersonalInformationManagement.Domain.ResumeAgg.RepositoryService;
 using System.Collections.Generic;
@@ -18,9 +19,24 @@ namespace PersonalInformationManagement.Infrastrure.ResumeInfra
             _context = context;
         }
 
-        public Task<Education_Edit_Request> GetDetailAsync(long id)
+        public async Task<List<Education_GetAll_Response>> GetByResumeAsync(long resumeId)
         {
-            return _context.Educations
+            return await _context.Educations
+              .Where(x => x.ResumeId == resumeId)
+              .Select(x => new Education_GetAll_Response()
+              {
+                  Id = x.KeyId,
+                  Degree = x.Degree,
+                  Institution = x.Institution,
+                  StartDate = x.StartDate.GetDayPersian(),
+                  EndDate = x.EndDate.GetDayPersian(),
+              })
+              .AsNoTracking().ToListAsync();
+        }
+
+        public async Task<Education_Edit_Request> GetDetailAsync(long id)
+        {
+            return await _context.Educations
                 .Select(x => new Education_Edit_Request()
                 {
                     Id = x.KeyId,

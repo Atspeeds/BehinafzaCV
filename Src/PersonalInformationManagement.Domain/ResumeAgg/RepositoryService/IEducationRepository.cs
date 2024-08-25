@@ -9,5 +9,6 @@ namespace PersonalInformationManagement.Domain.ResumeAgg.RepositoryService
     {
         Task<List<Education_GetAll_Response>> SearchAsync(Education_Search_Request request);
         Task<Education_Edit_Request> GetDetailAsync(long id);
+        Task<List<Education_GetAll_Response>> GetByResumeAsync(long resumeId);
     }
 }

@@ -1,7 +1,9 @@
 ﻿using _0_FrameWork.FW.Infrastrure;
 using Microsoft.EntityFrameworkCore;
+using PersonalInformationManagement.Application.Contract.EducationCon;
 using PersonalInformationManagement.Application.Contract.ExperienceCon;
 using PersonalInformationManagement.Application.Contract.ExperienceCon.ViewModel.Request;
+using PersonalInformationManagement.Application.Contract.SkillCon;
 using PersonalInformationManagement.Domain.ResumeAgg;
 using PersonalInformationManagement.Domain.ResumeAgg.RepositoryService;
 using System.Collections.Generic;
@@ -17,6 +19,21 @@ namespace PersonalInformationManagement.Infrastrure.ResumeInfra
         public ExperienceRepository(PersonalInformationContext dbContext) : base(dbContext)
         {
             _context = dbContext;
+        }
+
+        public async Task<List<Experience_GetAll_Request>> GetByResumeAsync(long resumeId)
+        {
+            return await _context.Experiences
+               .Where(x => x.ResumeId == resumeId)
+               .Select(x => new Experience_GetAll_Request()
+               {
+                   Id = x.KeyId,
+                   JobTitle=x.JobTitle,
+                   Company=x.Company,
+                   StartDate=x.StartDate.GetDayPersian(),
+                   EndDate=x.EndDate.GetDayPersian(),
+               })
+               .AsNoTracking().ToListAsync();
         }
 
         public Task<Experience_Edit_Request> GetDetailAsync(long id)

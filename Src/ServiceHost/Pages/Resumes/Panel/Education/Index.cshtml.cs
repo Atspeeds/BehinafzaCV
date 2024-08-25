@@ -1,13 +1,14 @@
 using _0_FrameWork.FW.Infrastrure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PersonalInformationManagement.Application.Contract.EducationCon;
-using PersonalInformationManagement.Domain.ResumeAgg;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace ServiceHost.Pages.Resumes.Panel.Education
 {
+    [Authorize]
     [ResumeRealUser]
     public class IndexModel : PageModel
     {
@@ -36,6 +37,7 @@ namespace ServiceHost.Pages.Resumes.Panel.Education
 
         public async Task<JsonResult> OnPostCreateAsync(Education_Add_Request request)
         {
+            request.ResumeId = resumeId;
             var res = await _application.AddAsync(request);
             return new JsonResult(res);
         }

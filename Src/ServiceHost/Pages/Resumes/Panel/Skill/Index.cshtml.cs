@@ -4,9 +4,11 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using PersonalInformationManagement.Application.Contract.SkillCon;
 using _0_FrameWork.FW.Infrastrure;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ServiceHost.Pages.Resumes.Panel.Skill
 {
+    [Authorize]
     [ResumeRealUser]
     public class IndexModel : PageModel
     {

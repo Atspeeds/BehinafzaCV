@@ -9,6 +9,7 @@ namespace PersonalInformationManagement.Domain.ResumeAgg.RepositoryService
     {
         Task<List<Resume_GetAll_Response>> GetAllAsync(long userId);
         Task<Resume_Edit_Request> GetDetailAsync(long id);
+        Task<bool> DeleteAllResumeAsync(long id);
 
     }
 }

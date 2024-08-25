@@ -11,7 +11,7 @@
         <h2 class="main-content-title tx-24 mg-b-5">به داشبورد خوش آمدید</h2>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">خانه</a></li>
-            <li class="breadcrumb-item" aria-current="page">داشبورد پروژه</li>
+            <li class="breadcrumb-item" aria-current="page">@ViewData["PanelTitle"]</li>
         </ol>
     </div>
 </div>
@@ -29,8 +29,12 @@
                             <div class="row align-items-center">
                                 <div class="offset-xl-3 offset-sm-6 col-xl-8 col-sm-6 col-12">
                                     <h4 class="d-flex  mb-3">
-                                        <span class="font-weight-bold text-white ">@_authHelper.GetCurrentUserInfo().FullName!</span>
+                                        <span class="font-weight-bold text-white ">@_authHelper.GetCurrentUserInfo().FullName!</span>            
                                     </h4>
+                                    <p class="text-white">
+                                        عزیز خوش اومدید میتونید رزومه خود را تکمیل کنید.
+                                    </p>
+
                                 </div>
                                 <img src="/assets/img/pngs/work3.png" alt="user-img">
                             </div>

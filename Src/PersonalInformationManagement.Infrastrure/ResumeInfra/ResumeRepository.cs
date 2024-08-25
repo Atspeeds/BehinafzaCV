@@ -18,6 +18,25 @@ namespace PersonalInformationManagement.Infrastrure.ResumeInfra
             _context = dbContext;
         }
 
+        public async Task<bool> DeleteAllResumeAsync(long id)
+        {
+            var resume = await _context.Resumes
+                  .Include(r => r.Skills)
+                  .Include(r => r.Educations)
+                  .Include(r => r.Experiences)
+                  .SingleOrDefaultAsync(r => r.KeyId == id);
+
+            _context.Skills.RemoveRange(resume.Skills);
+            _context.Educations.RemoveRange(resume.Educations);
+            _context.Experiences.RemoveRange(resume.Experiences);
+
+            _context.Resumes.Remove(resume);
+
+            await _context.SaveChangesAsync();
+
+            return await Task.FromResult(true);
+        }
+
         public async Task<List<Resume_GetAll_Response>> GetAllAsync(long userId)
         {
             return await _context.Resumes.Select(x =>

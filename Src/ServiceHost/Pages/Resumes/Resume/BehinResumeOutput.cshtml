@@ -1,0 +1,126 @@
+﻿@page "{id}"
+@inject _0_FrameWork.FW.Application.IAuthHelper _authHelper
+@model ServiceHost.Pages.Resumes.Resume.BehinResumeOutputModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BehinAfzarCV - @_authHelper.GetCurrentUserInfo().FullName</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS-->
+    <script src="/outputassets/fontawesome/js/all.min.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/outputassets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="/outputassets/css/orbit-1.css">
+</head>
+
+<body>
+    <div class="wrapper mt-lg-5" style="margin-bottom:20px">
+        <div class="sidebar-wrapper" style="min-height:672px">
+            <div class="profile-container">
+                <img class="profile" src="/outputassets/images/profile.png" alt="" />
+                <h1 class="name">@_authHelper.GetCurrentUserInfo().FullName</h1>
+                <h3 class="tagline">@Model.Title</h3>
+            </div><!--//profile-container-->
+
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <li class="phone"><i class="fa-solid fa-phone"></i><a href="tel:0123 456 789">@_authHelper.GetCurrentUserInfo().Mobile</a></li>
+                </ul>
+            </div><!--//contact-container-->
+
+        </div><!--//sidebar-wrapper-->
+
+        <div class="main-wrapper">
+
+
+            <section class="section experiences-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>سابقه شغلی</h2>
+
+                @foreach (var Experience in Model.Resume.Experiences)
+                {
+                    <div class="item">
+                        <div class="meta">
+                            <div class="upper-row">
+                                <h3 class="job-title">@Experience.JobTitle</h3>
+                                <div class="time">@Experience.StartDate - @Experience.EndDate</div>
+                            </div><!--//upper-row-->
+                            <div class="company">@Experience.Company</div>
+                        </div><!--//meta-->
+                    </div>
+                    <br />
+                    <!--//item-->
+                }
+         
+
+            </section><!--//section-->
+
+            <section class="section projects-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-archive"></i></span>سوابق تحصیلی</h2>
+                @foreach (var Education in Model.Resume.Educations)
+                {
+                    <div class="item">
+                        <span class="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/" target="_blank">@Education.Institution</a></span> - @Education.Degree <span class="project-tagline">@Education.StartDate - @Education.EndDate</span>
+
+                    </div>
+
+                    <!--//item-->
+                }
+            
+           
+            </section><!--//section-->
+
+            <section class="skills-section section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-rocket"></i></span>مهارت ها</h2>
+                <div class="skillset">
+                    @foreach (var Skill in Model.Resume.Skills)
+                    {
+                        <div class="item">
+                            <h3 class="level-title">@Skill.SkillName</h3>
+                            <div class="progress level-bar">
+                                @if(Skill.Score == 1)
+                                {
+                                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 30%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+
+                                }
+                                @if (Skill.Score == 2)
+                                {
+                                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 50%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+
+                                }
+                                @if (Skill.Score == 3)
+                                {
+                                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+
+                                }
+                            </div>
+                        </div>
+
+                        <!--//item-->
+                    }
+                   
+                  
+                </div>
+            </section><!--//skills-section-->
+
+        </div><!--//main-body-->
+    </div>
+
+</body>
+</html>
+
+
+
+

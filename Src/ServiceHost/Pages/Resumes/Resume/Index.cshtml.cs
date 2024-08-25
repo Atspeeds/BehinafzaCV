@@ -50,5 +50,17 @@ namespace ServiceHost.Pages.Resumes.Resume
             var res = await _application.EditAsync(request);
             return new JsonResult(res);
         }
+
+        public IActionResult OnGetDelete(long id)
+        {
+            var res = _application.GetDetailAsync(id).Result;
+            return Partial("./Delete", res);
+        }
+
+        public async Task<JsonResult> OnPostDeleteAsync(long id)
+        {
+            var res = await _application.DeleteAsync(id);
+            return new JsonResult(res);
+        }
     }
 }

@@ -10,5 +10,7 @@ namespace PersonalInformationManagement.Domain.ResumeAgg.RepositoryService
     {
         Task<List<Experience_GetAll_Request>> SearchAsync(Experience_Search_Request request);
         Task<Experience_Edit_Request> GetDetailAsync(long id);
+        Task<List<Experience_GetAll_Request>> GetByResumeAsync(long resumeId);
+
     }
 }

@@ -58,7 +58,8 @@
                                                     <td>
                                                         <a href="Panel/@resume.Id" class="btn ripple btn-info btn-sm">مشاهده</a>
                                                         <a href="#showmodal=@Url.Page("./Index", "Edit",new {id = resume.Id,resumeId = resume.Id})" class="btn ripple btn-warning btn-sm">ویرایش</a>
-                                                        <a href="#showmodal=@Url.Page("./Index", "Edit")" class="btn ripple btn-danger btn-sm">حذف</a>
+                                                        <a href="Resume/BehinResumeOutput/@resume.Id" class="btn ripple btn-primary btn-sm">گرفتن خروجی</a>
+                                                        <a href="#showmodal=@Url.Page("./Index", "Delete",new {id = resume.Id,resumeId = resume.Id})" class="btn ripple btn-danger btn-sm">حذف</a>
 
                                                     </td>
                                                 </tr>

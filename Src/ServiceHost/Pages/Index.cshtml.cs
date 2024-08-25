@@ -21,5 +21,9 @@ namespace ServiceHost.Pages
         {
 
         }
+        public void OnGetEdit()
+        {
+
+        }
     }
 }

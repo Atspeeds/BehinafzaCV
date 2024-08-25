@@ -25,5 +25,6 @@ namespace ServiceHost.Pages.Accounts
 			await _application.LoginAsync(request);
 		}
 
-	}
+
+    }
 }
