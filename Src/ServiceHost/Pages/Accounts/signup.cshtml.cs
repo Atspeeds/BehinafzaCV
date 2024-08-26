@@ -25,7 +25,7 @@ namespace ServiceHost.Pages.Accounts
 		public async Task<IActionResult> OnPostAsync(User_Register_Request request)
 		{
 			await _application.RegisterAsync(request);
-			return Page();
+			return Redirect("./Signing");
 		}
 
 	}
